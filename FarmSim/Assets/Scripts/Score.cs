@@ -11,6 +11,9 @@ public class Score : MonoBehaviour
     int daynum;
     GameObject garf;
     Timer timer;
+    public int goalScore = 50;
+    public TMP_Text Pscore;
+    public TMP_Text Pgoal;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +29,10 @@ public class Score : MonoBehaviour
     void Update()
     {
         print(score);
-        
+        Pgoal.GetComponent<TMP_Text>().text = goalScore.ToString();
+        Pscore.GetComponent<TMP_Text>().text = score.ToString();
+
+
 
         ScoreCheckAmounts();
 
@@ -50,11 +56,12 @@ public class Score : MonoBehaviour
                 {
                     print("success");
                     Time.timeScale = 0f;
-                    
+                    goalScore = 100;
                 }
                 break;
 
             case 2:
+
                 if (score < 100)
                 {
                     print("failure");
@@ -63,10 +70,12 @@ public class Score : MonoBehaviour
                 {
                     print("success");
                     Time.timeScale = 0f;
+                    goalScore = 200;
                 }
                 break;
 
             case 3:
+
                 if (score < 200)
                 {
                     print("failure");
@@ -75,10 +84,12 @@ public class Score : MonoBehaviour
                 {
                     print("success");
                     Time.timeScale = 0f;
+                    goalScore = 350;
                 }
                 break;
 
             case 4:
+
                 if (score < 350)
                 {
                     print("failure");
@@ -87,11 +98,13 @@ public class Score : MonoBehaviour
                 {
                     print("success");
                     Time.timeScale = 0f;
+                    goalScore = 550;
                 }
 
                 break;
 
             case 5:
+
                 if (score < 550)
                 {
                     print("failure");
@@ -100,12 +113,14 @@ public class Score : MonoBehaviour
                 {
                     print("success");
                     Time.timeScale = 0f;
+                    goalScore = 700;
                 }
 
                 break;
 
             case 6:
-                if(score < 700)
+
+                if (score < 700)
                 {
                     print("failure");
                 }
@@ -113,11 +128,13 @@ public class Score : MonoBehaviour
                 {
                     print("success");
                     Time.timeScale = 0f;
+                    goalScore = 800;
                 }
                 break;
 
             case 7:
-                if(score < 800)
+
+                if (score < 800)
                 {
                     print("failure");
                 }
@@ -125,11 +142,12 @@ public class Score : MonoBehaviour
                 {
                     print("success");
                     Time.timeScale = 0f;
+                    goalScore = 1000;
                 }
                 break;
 
             case 8:
-                {
+
                 if (score < 1000)
                 {
                     print("failure");
@@ -140,7 +158,6 @@ public class Score : MonoBehaviour
                     Time.timeScale = 0f;
                 }
                 break;
-                }
 
         }
     }
