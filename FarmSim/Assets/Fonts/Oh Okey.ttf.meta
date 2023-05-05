@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: e7a32519a791623489bdb1661b039683
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Oh Okey
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 266098475bbee504db81d502d37488e6, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

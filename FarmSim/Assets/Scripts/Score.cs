@@ -28,9 +28,9 @@ public class Score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        print(score);
-        Pgoal.GetComponent<TMP_Text>().text = goalScore.ToString();
-        Pscore.GetComponent<TMP_Text>().text = score.ToString();
+        //print(score);
+        Pgoal.GetComponent<TMP_Text>().text = "Goal: " + goalScore.ToString();
+        Pscore.GetComponent<TMP_Text>().text = "Score: " + score.ToString();
 
 
 
