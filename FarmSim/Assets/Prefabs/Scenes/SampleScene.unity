@@ -2032,6 +2032,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
+  goalScore: 50
+  Pscore: {fileID: 2140046056}
+  Pgoal: {fileID: 1527286040}
 --- !u!1 &325526014
 GameObject:
   m_ObjectHideFlags: 0
