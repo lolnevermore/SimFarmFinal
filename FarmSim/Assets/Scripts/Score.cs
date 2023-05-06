@@ -14,6 +14,8 @@ public class Score : MonoBehaviour
     public int goalScore = 50;
     public TMP_Text Pscore;
     public TMP_Text Pgoal;
+    public TMP_Text PscoreShadow;
+    public TMP_Text PgoalShadow;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +33,8 @@ public class Score : MonoBehaviour
         //print(score);
         Pgoal.GetComponent<TMP_Text>().text = "Goal: " + goalScore.ToString();
         Pscore.GetComponent<TMP_Text>().text = "Score: " + score.ToString();
+        PgoalShadow.GetComponent<TMP_Text>().text = "Goal: " + goalScore.ToString();
+        PscoreShadow.GetComponent<TMP_Text>().text = "Score: " + score.ToString();
 
 
 
