@@ -7,7 +7,7 @@ public class LightManager : MonoBehaviour
 {
     [SerializeField] private Light DirLight;
     [SerializeField] private PresetLights Light;
-    [SerializeField, Range(0, 24)] private float time;
+    [SerializeField, Range(0, 60)] private float time;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,12 +23,12 @@ public class LightManager : MonoBehaviour
         if (Application.isPlaying)
         {
             time += Time.deltaTime;
-            time %= 24;
-            UpdateLight(time / 24f);
+            time %= 60;
+            UpdateLight(time / 60f);
         }
         else
         {
-            UpdateLight(time / 24f);
+            UpdateLight(time / 60f);
         }
     }
 
