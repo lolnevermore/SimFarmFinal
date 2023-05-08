@@ -2753,6 +2753,7 @@ GameObject:
   m_Component:
   - component: {fileID: 317734475}
   - component: {fileID: 317734476}
+  - component: {fileID: 317734477}
   m_Layer: 0
   m_Name: ScoreManager
   m_TagString: Untagged
@@ -2793,6 +2794,23 @@ MonoBehaviour:
   Pgoal: {fileID: 622621065}
   PscoreShadow: {fileID: 2140046056}
   PgoalShadow: {fileID: 1527286040}
+--- !u!114 &317734477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317734474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a10e5861b9256549a6c8eace5b9da26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 1690692445}
+  initialSpawnDelay: 6
+  spawnInterval: 5
+  spawnPoint: {fileID: 317734475}
+  score: {fileID: 317734476}
 --- !u!1 &325526014
 GameObject:
   m_ObjectHideFlags: 0
@@ -14255,7 +14273,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1610205836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14269,8 +14287,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 1690692445}
+  initialSpawnDelay: 6
   spawnInterval: 5
   spawnPoint: {fileID: 1610205837}
+  score: {fileID: 0}
 --- !u!4 &1610205837
 Transform:
   m_ObjectHideFlags: 0
