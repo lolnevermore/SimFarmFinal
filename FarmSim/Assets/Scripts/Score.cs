@@ -17,6 +17,7 @@ public class Score : MonoBehaviour
     public TMP_Text PscoreShadow;
     public TMP_Text PgoalShadow;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -44,6 +45,16 @@ public class Score : MonoBehaviour
         {
             score = 0;
         }*/
+    }
+    public void SubtractPoints(int amount)
+    {
+        score -= amount;
+
+        // Ensure the main character never has negative points
+        if (score < 0)
+        {
+            score = 0;
+        }
     }
 
 

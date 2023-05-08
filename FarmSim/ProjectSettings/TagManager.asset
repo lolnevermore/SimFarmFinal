@@ -19,6 +19,8 @@ TagManager:
   - LeafSeed
   - MushSeed
   - FlowerSeed
+  - PlantSeed
+  - Enemy
   layers:
   - Default
   - TransparentFX
