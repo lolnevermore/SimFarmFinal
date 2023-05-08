@@ -9,7 +9,7 @@ public class Movement : MonoBehaviour
     
 
     //[SerializeField] GameObject camSwitcher;
-    [SerializeField] private float speed = 5f;
+    [SerializeField] public float speed = 5f;
 
     [SerializeField] LayerMask boxObjectLayer;
     

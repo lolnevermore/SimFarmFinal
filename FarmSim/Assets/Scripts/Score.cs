@@ -16,6 +16,9 @@ public class Score : MonoBehaviour
     public TMP_Text Pgoal;
     public TMP_Text PscoreShadow;
     public TMP_Text PgoalShadow;
+    public GameObject Success;
+    public GameObject Failure;
+    public GameObject Win;
 
 
     // Start is called before the first frame update
@@ -24,7 +27,9 @@ public class Score : MonoBehaviour
         score = startingScore;
         garf = GameObject.Find("Timer");
         timer = garf.GetComponent<Timer>();
-
+        Success.SetActive(false);
+        Failure.SetActive(false);
+        Win.SetActive(false);
        
     }
 
@@ -66,11 +71,13 @@ public class Score : MonoBehaviour
                 if (score < 50)
                 {
                     print("failure");
+                    Failure.SetActive(true);
                 }
                 else if (score >= 50)
                 {
                     print("success");
                     Time.timeScale = 0f;
+                    Success.SetActive(true);
                     goalScore = 100;
                 }
                 break;
@@ -80,11 +87,13 @@ public class Score : MonoBehaviour
                 if (score < 100)
                 {
                     print("failure");
+                    Failure.SetActive(true);
                 }
                 else if (score >= 100)
                 {
                     print("success");
                     Time.timeScale = 0f;
+                    Success.SetActive(true);
                     goalScore = 200;
                 }
                 break;
@@ -94,11 +103,13 @@ public class Score : MonoBehaviour
                 if (score < 200)
                 {
                     print("failure");
+                    Failure.SetActive(true);
                 }
                 else if (score >= 200)
                 {
                     print("success");
                     Time.timeScale = 0f;
+                    Success.SetActive(true);
                     goalScore = 350;
                 }
                 break;
@@ -108,11 +119,13 @@ public class Score : MonoBehaviour
                 if (score < 350)
                 {
                     print("failure");
+                    Failure.SetActive(true);
                 }
                 else if (score >= 350)
                 {
                     print("success");
                     Time.timeScale = 0f;
+                    Success.SetActive(true);
                     goalScore = 550;
                 }
 
@@ -123,11 +136,13 @@ public class Score : MonoBehaviour
                 if (score < 550)
                 {
                     print("failure");
+                    Failure.SetActive(true);
                 }
                 else if (score >= 550)
                 {
                     print("success");
                     Time.timeScale = 0f;
+                    Success.SetActive(true);
                     goalScore = 700;
                 }
 
@@ -138,11 +153,13 @@ public class Score : MonoBehaviour
                 if (score < 700)
                 {
                     print("failure");
+                    Failure.SetActive(true);
                 }
                 else if (score >= 700)
                 {
                     print("success");
                     Time.timeScale = 0f;
+                    Success.SetActive(true);
                     goalScore = 800;
                 }
                 break;
@@ -152,11 +169,13 @@ public class Score : MonoBehaviour
                 if (score < 800)
                 {
                     print("failure");
+                    Failure.SetActive(true);
                 }
                 else if (score >= 800)
                 {
                     print("success");
                     Time.timeScale = 0f;
+                    Success.SetActive(true);
                     goalScore = 1000;
                 }
                 break;
@@ -166,11 +185,13 @@ public class Score : MonoBehaviour
                 if (score < 1000)
                 {
                     print("failure");
+                    Failure.SetActive(true);
                 }
                 else if (score >= 1000)
                 {
                     print("success");
                     Time.timeScale = 0f;
+                    Win.SetActive(true);
                 }
                 break;
 

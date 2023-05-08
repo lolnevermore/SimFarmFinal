@@ -6,9 +6,9 @@ public class PlantGrowth : MonoBehaviour
 {
     [SerializeField] GameObject plant;
     float time;
-    int potatoTime = 15;
-    int cornTime = 20;
-    int carrotTime = 10;
+    public float potatoTime = 15;
+    public float cornTime = 20;
+    public float carrotTime = 10;
 
     int leafTime = 30;
     int MushTime = 15;
