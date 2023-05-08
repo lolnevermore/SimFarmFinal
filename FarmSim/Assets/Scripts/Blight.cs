@@ -27,7 +27,7 @@ public class Blight : MonoBehaviour
         {
             c.GetComponent<PlantBlight>().blighted = true;
         }
-        if (transform.localScale.x > 6)
+        if (transform.localScale.x >= 3)
         {
             Destroy(gameObject);
         }

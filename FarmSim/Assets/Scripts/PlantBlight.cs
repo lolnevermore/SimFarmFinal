@@ -26,23 +26,23 @@ public class PlantBlight : MonoBehaviour
         {            
             timeAfflicted += 1 * Time.deltaTime;
         }
-        if (blighted && timeAfflicted > 15)
+        if (blighted && timeAfflicted > 5)
         {
             currentModel.GetComponent<MeshRenderer>().enabled = false;
             blightModel.GetComponent<MeshRenderer>().enabled = true;
         }
-        if (blighted && timeAfflicted > 30)
+        if (blighted && timeAfflicted > 10)
         {
             blightModel.GetComponent<MeshRenderer>().enabled = false;
             blightlv2.GetComponent<MeshRenderer>().enabled = true;
         }
-        if(blighted && timeAfflicted > 45)
+        if(blighted && timeAfflicted > 15)
         {
             blightlv2.GetComponent<MeshRenderer>().enabled = false;
             blightlv3.GetComponent<MeshRenderer>().enabled = true;
             
         }
-        if(blighted && timeAfflicted > 60)
+        if(blighted && timeAfflicted > 30)
         {
             Destroy(gameObject);
             Instantiate(blight, transform.position, transform.rotation);
