@@ -71,6 +71,7 @@ public class Score : MonoBehaviour
                 if (score < 50)
                 {
                     print("failure");
+                    Time.timeScale = 0f;
                     Failure.SetActive(true);
                 }
                 else if (score >= 50)
@@ -87,6 +88,7 @@ public class Score : MonoBehaviour
                 if (score < 100)
                 {
                     print("failure");
+                    Time.timeScale = 0f;
                     Failure.SetActive(true);
                 }
                 else if (score >= 100)
@@ -103,6 +105,7 @@ public class Score : MonoBehaviour
                 if (score < 200)
                 {
                     print("failure");
+                    Time.timeScale = 0f;
                     Failure.SetActive(true);
                 }
                 else if (score >= 200)
@@ -119,6 +122,7 @@ public class Score : MonoBehaviour
                 if (score < 350)
                 {
                     print("failure");
+                    Time.timeScale = 0f;
                     Failure.SetActive(true);
                 }
                 else if (score >= 350)
@@ -136,6 +140,7 @@ public class Score : MonoBehaviour
                 if (score < 550)
                 {
                     print("failure");
+                    Time.timeScale = 0f;
                     Failure.SetActive(true);
                 }
                 else if (score >= 550)
@@ -153,6 +158,7 @@ public class Score : MonoBehaviour
                 if (score < 700)
                 {
                     print("failure");
+                    Time.timeScale = 0f;
                     Failure.SetActive(true);
                 }
                 else if (score >= 700)
@@ -169,6 +175,7 @@ public class Score : MonoBehaviour
                 if (score < 800)
                 {
                     print("failure");
+                    Time.timeScale = 0f;
                     Failure.SetActive(true);
                 }
                 else if (score >= 800)
@@ -185,6 +192,7 @@ public class Score : MonoBehaviour
                 if (score < 1000)
                 {
                     print("failure");
+                    Time.timeScale = 0f;
                     Failure.SetActive(true);
                 }
                 else if (score >= 1000)
