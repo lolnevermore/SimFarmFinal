@@ -21,6 +21,7 @@ TagManager:
   - FlowerSeed
   - PlantSeed
   - Enemy
+  - Pet
   layers:
   - Default
   - TransparentFX
@@ -34,7 +35,7 @@ TagManager:
   - Soil
   - Plant
   - SaleBox
-  - 
+  - Blight
   - 
   - 
   - 

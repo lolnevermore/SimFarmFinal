@@ -11,8 +11,10 @@ GameObject:
   - component: {fileID: 1174326841334467109}
   - component: {fileID: 1174326841334467108}
   - component: {fileID: 1174326841334467107}
-  - component: {fileID: 1174326841334467106}
-  m_Layer: 0
+  - component: {fileID: -814148135871908448}
+  - component: {fileID: -4118150774065136263}
+  - component: {fileID: -2972873961016543670}
+  m_Layer: 12
   m_Name: Blight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,7 +86,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1174326841334467106
+--- !u!114 &-814148135871908448
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -102,3 +104,30 @@ MonoBehaviour:
   plantLayer:
     serializedVersion: 2
     m_Bits: 1024
+--- !u!114 &-4118150774065136263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174326841334467105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 130d0992cad6dd0419ecfd185812e49c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
+--- !u!65 &-2972873961016543670
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174326841334467105}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.1158845, z: 1}
+  m_Center: {x: 0, y: 0.057947837, z: 0}
