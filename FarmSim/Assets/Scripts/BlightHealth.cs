@@ -1,28 +1,28 @@
-using UnityEngine;
+//using UnityEngine;
 
-public class BlightHealth : MonoBehaviour
-{
-    public float maxHealth = 100f;
-    public float currentHealth;
+//public class BlightHealth : MonoBehaviour
+//{
+//    public float maxHealth = 100f;
+//    public float currentHealth;
 
-    void Start()
-    {
-        currentHealth = maxHealth;
-    }
+//    void Start()
+//    {
+//        currentHealth = maxHealth;
+//    }
 
-    public void TakeDamage(float damage)
-    {
-        currentHealth -= damage;
+//    public void TakeDamage(float damage)
+//    {
+//        currentHealth -= damage;
 
-        if (currentHealth <= 0f)
-        {
-            Die();
-        }
-    }
+//        if (currentHealth <= 0f)
+//        {
+//            Die();
+//        }
+//    }
 
-    void Die()
-    {
-        // Destroy the game object when it dies
-        Destroy(gameObject);
-    }
-}
+//    void Die()
+//    {
+//        // Destroy the game object when it dies
+//        Destroy(gameObject);
+//    }
+//}
