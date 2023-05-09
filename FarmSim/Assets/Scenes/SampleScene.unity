@@ -17128,7 +17128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e95bc6affa2d944ba413cd127afee9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bounceHeight: 0.5
+  bounceHeight: 0.2
   bounceSpeed: 0.6
 --- !u!4 &1605015261 stripped
 Transform:
