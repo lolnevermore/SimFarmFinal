@@ -5,23 +5,49 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public Animator transitionAnim;
+    public string SceneName;
+    public GameObject transitionScreen;
+
+    private void Start()
+    {
+        transitionScreen = GameObject.Find("ScreenTran");
+        transitionScreen.SetActive(false);
+    }
     public void startGame()
     {
-        SceneManager.LoadScene("SampleScene");
+        //transitionAnim.SetTrigger("end");
+        //SceneManager.LoadScene("SampleScene");
+        SceneName = "SampleScene";
+        StartCoroutine(LoadScene());
     }
 
     public void settings()
     {
-        SceneManager.LoadScene("Settings");
+        //transitionAnim.SetTrigger("end");
+        //SceneManager.LoadScene("Settings");
+        SceneName = "Settings";
+        StartCoroutine(LoadScene());
     }
 
     public void returnToMain()
     {
-        SceneManager.LoadScene("Main Menu");
+        //transitionAnim.SetTrigger("end");
+        //SceneManager.LoadScene("Main Menu");
+        SceneName = "Main Menu";
+        StartCoroutine(LoadScene());
     }
 
     public void quitGame()
     {
         Application.Quit();
+    }
+
+    IEnumerator LoadScene()
+    {
+        transitionScreen.SetActive(true);
+        transitionAnim.SetTrigger("end");
+        yield return new WaitForSeconds(1.5f);
+        SceneManager.LoadScene(SceneName);
     }
 }
