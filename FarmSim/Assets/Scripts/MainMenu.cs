@@ -47,7 +47,7 @@ public class MainMenu : MonoBehaviour
     {
         transitionScreen.SetActive(true);
         transitionAnim.SetTrigger("end");
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(0.5f);
         SceneManager.LoadScene(SceneName);
     }
 }

@@ -18,6 +18,7 @@ public class Upgrades : MonoBehaviour
     float growCar;
     float growCorn;
     public GameObject Success;
+    public GameObject bench;
 
     void Start()
     {
@@ -34,8 +35,6 @@ public class Upgrades : MonoBehaviour
         //enemy = GameObject.FindGameObjectWithTag("Enemy");
         enemyMSpeed = enemy.GetComponent<Enemy>().moveSpeed;
         enemyRSpeed = enemy.GetComponent<Enemy>().runSpeed;
-
-        Success.SetActive(false);
 
     }
 
@@ -79,9 +78,12 @@ public class Upgrades : MonoBehaviour
         
     }
 
+
     public void ContinueRunback()
     {
-        Time.timeScale = 1f;
+        bench.GetComponent<WorkBench>().hasTriggered = false;
         Success.SetActive(false);
+        Time.timeScale = 1f;
+        
     }
 }

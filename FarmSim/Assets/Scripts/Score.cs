@@ -11,7 +11,7 @@ public class Score : MonoBehaviour
     int daynum;
     GameObject garf;
     Timer timer;
-    public int goalScore = 50;
+    public int goalScore;
     public TMP_Text Pscore;
     public TMP_Text Pgoal;
     public TMP_Text PscoreShadow;
@@ -68,69 +68,71 @@ public class Score : MonoBehaviour
         switch (timer.day) 
         {
             case 1:
+                goalScore = 50;
                 if (score < 50)
                 {
                     print("failure");
                     Time.timeScale = 0f;
                     Failure.SetActive(true);
-                    
+
                 }
                 else if (score >= 50)
                 {
                     print("success");
-                    Time.timeScale = 0f;
-                    Success.SetActive(true);
+                    //Time.timeScale = 0f;
+                    //Success.SetActive(true);
                     goalScore = 100;
                 }
                 break;
+                
 
 
             case 2:
-                if (score < 100)
+                if (score < goalScore)
                 {
                     print("failure");
                     Time.timeScale = 0f;
                     Failure.SetActive(true);
                 }
-                else if (score >= 100)
+                else if (score >= goalScore)
                 {
                     print("success");
-                    Time.timeScale = 0f;
-                    Success.SetActive(true);
+                //    Time.timeScale = 0f;
+                //    Success.SetActive(true);
                     goalScore = 200;
                 }
                 break;
 
             case 3:
 
-                if (score < 200)
+                if (score < goalScore)
                 {
                     print("failure");
                     Time.timeScale = 0f;
                     Failure.SetActive(true);
                 }
-                else if (score >= 200)
+                else if (score >= goalScore)
                 {
                     print("success");
-                    Time.timeScale = 0f;
-                    Success.SetActive(true);
+                //    Time.timeScale = 0f;
+                //    Success.SetActive(true);
                     goalScore = 350;
                 }
                 break;
 
             case 4:
 
-                if (score < 350)
+                if (score < goalScore)
                 {
                     print("failure");
                     Time.timeScale = 0f;
                     Failure.SetActive(true);
                 }
-                else if (score >= 350)
+                else if (score >= goalScore)
                 {
                     print("success");
-                    Time.timeScale = 0f;
-                    Success.SetActive(true);
+                //    Time.timeScale = 0f;
+                //    Success.SetActive(true);
                     goalScore = 550;
                 }
 
@@ -138,17 +140,17 @@ public class Score : MonoBehaviour
 
             case 5:
 
-                if (score < 550)
+                if (score < goalScore)
                 {
                     print("failure");
                     Time.timeScale = 0f;
                     Failure.SetActive(true);
                 }
-                else if (score >= 550)
+                else if (score >= goalScore)
                 {
                     print("success");
-                    Time.timeScale = 0f;
-                    Success.SetActive(true);
+                //    Time.timeScale = 0f;
+                //    Success.SetActive(true);
                     goalScore = 700;
                 }
 
@@ -156,54 +158,59 @@ public class Score : MonoBehaviour
 
             case 6:
 
-                if (score < 700)
+                if (score < goalScore)
                 {
                     print("failure");
                     Time.timeScale = 0f;
                     Failure.SetActive(true);
                 }
-                else if (score >= 700)
+                else if (score >= goalScore)
                 {
                     print("success");
-                    Time.timeScale = 0f;
-                    Success.SetActive(true);
+                //    Time.timeScale = 0f;
+                //    Success.SetActive(true);
                     goalScore = 800;
                 }
                 break;
 
             case 7:
 
-                if (score < 800)
+                if (score < goalScore)
                 {
                     print("failure");
                     Time.timeScale = 0f;
                     Failure.SetActive(true);
                 }
-                else if (score >= 800)
+                else if (score >= goalScore)
                 {
                     print("success");
-                    Time.timeScale = 0f;
-                    Success.SetActive(true);
+                //    Time.timeScale = 0f;
+                //    Success.SetActive(true);
                     goalScore = 1000;
                 }
                 break;
 
             case 8:
 
-                if (score < 1000)
+                if (score < goalScore)
                 {
                     print("failure");
                     Time.timeScale = 0f;
                     Failure.SetActive(true);
                 }
-                else if (score >= 1000)
+                else if (score >= goalScore)
                 {
-                    print("success");
-                    Time.timeScale = 0f;
+                //    print("success");
+                //    Time.timeScale = 0f;
                     Win.SetActive(true);
                 }
                 break;
 
         }
+    }
+    public void Continue()
+    {
+        Time.timeScale = 1f;
+        Success.SetActive(false);
     }
 }

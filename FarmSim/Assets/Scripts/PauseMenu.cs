@@ -60,7 +60,9 @@ public class PauseMenu : MonoBehaviour
 
     public void QuitToMain()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene("Main Menu");
+
     }
 
     public void QuitGame()
@@ -78,4 +80,6 @@ public class PauseMenu : MonoBehaviour
     {
         SFXMixer.SetFloat("SFXVolume", volumeS);
     }
+
+    
 }
