@@ -1,15 +1,19 @@
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class Flamethrower : MonoBehaviour
 {
     public ParticleSystem particles;
     public float damage = 10f;
+    public AudioClip fire;
+    public AudioSource source;
 
     private void Update()
     {
         if (Input.GetButton("Fire1"))
         {
             particles.Play();
+            source.PlayOneShot(fire);
         }
         else
         {

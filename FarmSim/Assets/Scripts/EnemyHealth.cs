@@ -1,9 +1,14 @@
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class EnemyHealth : MonoBehaviour
 {
     public float maxHealth = 100f;
     public float currentHealth;
+    public float delay = 1f;
+    public AudioSource deathSource;
+    public AudioClip deathClip;
+    //public bool isDestroyed = false;
 
     private void Start()
     {
@@ -15,6 +20,8 @@ public class EnemyHealth : MonoBehaviour
         currentHealth -= damageAmount;
         if (currentHealth <= 0f)
         {
+            deathSource.PlayOneShot(deathClip);
+
             Die();
         }
     }
@@ -22,6 +29,7 @@ public class EnemyHealth : MonoBehaviour
     private void Die()
     {
         // Destroy the enemy object
-        Destroy(gameObject);
+        //isDestroyed = true;
+        Destroy(gameObject, delay);
     }
 }
