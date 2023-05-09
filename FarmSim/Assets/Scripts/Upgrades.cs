@@ -33,7 +33,7 @@ public class Upgrades : MonoBehaviour
         //score = GameObject.Find("ScoreManager");
         PScore = score.GetComponent<Score>().score;
         //enemy = GameObject.FindGameObjectWithTag("Enemy");
-        enemyMSpeed = enemy.GetComponent<Enemy>().moveSpeed;
+        //enemyMSpeed = enemy.GetComponent<Enemy>().moveSpeed;
         enemyRSpeed = enemy.GetComponent<Enemy>().runSpeed;
 
     }
@@ -72,7 +72,7 @@ public class Upgrades : MonoBehaviour
         if (PScore >= 100)
         {
             PScore = PScore - 100;
-            enemy.GetComponent<Enemy>().moveSpeed = enemyMSpeed * 0.6f;
+            //enemy.GetComponent<Enemy>().moveSpeed = enemyMSpeed * 0.6f;
             enemy.GetComponent<Enemy>().runSpeed = enemyRSpeed * 0.6f;
         }
         
