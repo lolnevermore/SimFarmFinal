@@ -3,7 +3,7 @@ using UnityEngine;
 public class Flamethrower : MonoBehaviour
 {
     public ParticleSystem particles;
-    public int damage = 10;
+    public float damage = 10f;
 
     private void Update()
     {

@@ -21,17 +21,17 @@ public class Upgrades : MonoBehaviour
 
     void Start()
     {
-        player = GameObject.Find("Player");
+        //player = GameObject.Find("Player");
         playerSpeed = player.GetComponent<Movement>().speed;
-        PotPlant = GameObject.FindGameObjectWithTag("PotatoSeed");
-        CarPlant = GameObject.FindGameObjectWithTag("CarrotoSeed");
-        CornPlant = GameObject.FindGameObjectWithTag("CornSeed");
+        //PotPlant = GameObject.FindGameObjectWithTag("PotatoSeed");
+        //CarPlant = GameObject.FindGameObjectWithTag("CarrotoSeed");
+        //CornPlant = GameObject.FindGameObjectWithTag("CornSeed");
         growPot = PotPlant.GetComponent<PlantGrowth>().potatoTime;
         growCar = CarPlant.GetComponent<PlantGrowth>().carrotTime;
         growCorn = CornPlant.GetComponent<PlantGrowth>().cornTime;
-        score = GameObject.Find("ScoreManager");
+        //score = GameObject.Find("ScoreManager");
         PScore = score.GetComponent<Score>().score;
-        enemy = GameObject.FindGameObjectWithTag("Enemy");
+        //enemy = GameObject.FindGameObjectWithTag("Enemy");
         enemyMSpeed = enemy.GetComponent<Enemy>().moveSpeed;
         enemyRSpeed = enemy.GetComponent<Enemy>().runSpeed;
 
@@ -42,26 +42,41 @@ public class Upgrades : MonoBehaviour
     private void Update()
     {
         score.GetComponent<Score>().score = PScore;
+        if (PScore < 0)
+        {
+            PScore = 0;
+        }
     }
     public void UpgradePlayerMovespeed()
     {
-        PScore = PScore - 200;
-        player.GetComponent<Movement>().speed = playerSpeed * 2.5f;
+        if (PScore >= 200)
+        {
+            PScore = PScore - 200;
+            player.GetComponent<Movement>().speed = playerSpeed * 2.5f;
+        }
+
     }
 
     public void UpgradePlantGrowth()
     {
-        PScore = PScore - 150;
-        PotPlant.GetComponent<PlantGrowth>().potatoTime = growPot * 0.5f;
-        CarPlant.GetComponent<PlantGrowth>().carrotTime = growCar * 0.5f;
-        CornPlant.GetComponent<PlantGrowth>().cornTime = growCorn * 0.5f;
+        if (PScore >= 150)
+        {
+            PScore = PScore - 150;
+            PotPlant.GetComponent<PlantGrowth>().potatoTime = growPot * 0.5f;
+            CarPlant.GetComponent<PlantGrowth>().carrotTime = growCar * 0.5f;
+            CornPlant.GetComponent<PlantGrowth>().cornTime = growCorn * 0.5f;
+        }
     }
 
      public void DegradeFoxSpeed()
     {
-        PScore = PScore - 100;
-        enemy.GetComponent<Enemy>().moveSpeed = enemyMSpeed * 0.6f;
-        enemy.GetComponent<Enemy>().runSpeed = enemyRSpeed * 0.6f;
+        if (PScore >= 100)
+        {
+            PScore = PScore - 100;
+            enemy.GetComponent<Enemy>().moveSpeed = enemyMSpeed * 0.6f;
+            enemy.GetComponent<Enemy>().runSpeed = enemyRSpeed * 0.6f;
+        }
+        
     }
 
     public void ContinueRunback()

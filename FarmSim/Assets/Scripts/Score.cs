@@ -73,6 +73,7 @@ public class Score : MonoBehaviour
                     print("failure");
                     Time.timeScale = 0f;
                     Failure.SetActive(true);
+                    
                 }
                 else if (score >= 50)
                 {
@@ -83,8 +84,8 @@ public class Score : MonoBehaviour
                 }
                 break;
 
-            case 2:
 
+            case 2:
                 if (score < 100)
                 {
                     print("failure");

@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using UnityEngine.Audio;
 public class Enemy : MonoBehaviour
 {
 
@@ -22,6 +22,9 @@ public class Enemy : MonoBehaviour
 
 
     public Score score;
+
+    public AudioClip swipe;
+    public AudioSource srce;
 
    
 
@@ -51,7 +54,7 @@ public class Enemy : MonoBehaviour
 
                 score.SubtractPoints(10);
 
-
+                srce.PlayOneShot(swipe);
 
                 hasStolenPoints = true;
 
