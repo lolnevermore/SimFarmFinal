@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Score : MonoBehaviour
 {
@@ -212,5 +213,11 @@ public class Score : MonoBehaviour
     {
         Time.timeScale = 1f;
         Success.SetActive(false);
+    }
+
+   public void backItUp()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Main Menu");
     }
 }

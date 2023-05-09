@@ -4,8 +4,14 @@ public class Flamethrower : MonoBehaviour
 {
     public ParticleSystem particles;
     public float damage = 10f;
+    //public GameObject[] blight;
+    public GameObject[] enemy;
 
-    private void Update()
+    private void Start()
+    {
+        
+    }
+    public void Update()
     {
         if (Input.GetButton("Fire1"))
         {
@@ -15,14 +21,25 @@ public class Flamethrower : MonoBehaviour
         {
             particles.Stop();
         }
+        
+        for (int i=0; i < enemy.Length; i++)
+        {
+            enemy[i] = GameObject.FindGameObjectWithTag("Enemy");
+        }
+                
+        //blight = new GameObject[] { enemy };
     }
 
-    private void OnParticleCollision(GameObject other)
+    public void OnParticleCollision(GameObject other)
     {
-        BlightHealth enemy = other.GetComponent<BlightHealth>();
+        //BlightHealth enemy = other.gameObject.tag == "Enemy";
         if (enemy != null)
         {
-            enemy.TakeDamage(damage);
+            foreach (GameObject blight in enemy)
+            {
+                blight.gameObject.GetComponent<BlightHealth>().TakeDamage(damage);
+            }
+            
         }
     }
 }

@@ -3566,8 +3566,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 1690692445}
-  initialSpawnDelay: 6
-  spawnInterval: 5
+  initialSpawnDelay: 10
+  spawnInterval: 10
   spawnPoint: {fileID: 317734475}
   score: {fileID: 317734476}
 --- !u!1 &325526014
@@ -16795,9 +16795,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 325526019}
-        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
-        m_MethodName: QuitToMain
+      - m_Target: {fileID: 317734476}
+        m_TargetAssemblyTypeName: Score, Assembly-CSharp
+        m_MethodName: backItUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18156,7 +18156,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5e801e43e9686654283c20a02731210f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.2
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5e801e43e9686654283c20a02731210f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -18164,7 +18164,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5e801e43e9686654283c20a02731210f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.09
+      value: 3.34
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5e801e43e9686654283c20a02731210f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -22348,7 +22348,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointStealAmount: 10
   moveSpeed: 5
-  runSpeed: 5
+  runSpeed: 3
   score: {fileID: 317734476}
   swipe: {fileID: 8300000, guid: 295b689feda30904db770b0dad5548f0, type: 3}
   srce: {fileID: 1252282990}
@@ -27256,6 +27256,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   particles: {fileID: 1693140382}
   damage: 20
+  enemy: []
 --- !u!4 &1696809842 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2257381824393857745, guid: cb6726480012edc4b8095c5eb325234b, type: 3}

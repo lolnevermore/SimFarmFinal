@@ -11,6 +11,7 @@ public class MainMenu : MonoBehaviour
 
     private void Start()
     {
+        Time.timeScale = 1f;
         transitionScreen = GameObject.Find("ScreenTran");
         transitionScreen.SetActive(false);
     }
