@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6188908727703544241}
   - component: {fileID: 6188908727703544240}
   - component: {fileID: 2851384422639859461}
+  - component: {fileID: 5036980105966362228}
   m_Layer: 10
   m_Name: PotatoPlant
   m_TagString: PotatoSeed
@@ -122,6 +123,20 @@ MonoBehaviour:
   blightlv2: {fileID: 5505528298881600238}
   blightlv3: {fileID: 4146332017182514143}
   blight: {fileID: 1174326841334467105, guid: fb64af650caf3f341a7797920606cfc5, type: 3}
+--- !u!114 &5036980105966362228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6188908727703544247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11cf1a1c19b6dfd459180de9d2dc62d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
 --- !u!1001 &1171866132547456091
 PrefabInstance:
   m_ObjectHideFlags: 0

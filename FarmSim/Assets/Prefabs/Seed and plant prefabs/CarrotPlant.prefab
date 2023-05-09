@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7452531601979019960}
   - component: {fileID: 7452531601979019963}
   - component: {fileID: 8387503684056062989}
+  - component: {fileID: 1399385292088925700}
   m_Layer: 10
   m_Name: CarrotPlant
   m_TagString: CarrotSeed
@@ -100,8 +101,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.0693394, y: 1, z: 1.0718665}
+  m_Center: {x: 0.034669567, y: 0, z: 0.14413351}
 --- !u!114 &8387503684056062989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,6 +123,20 @@ MonoBehaviour:
   blightlv2: {fileID: 6836930248116008283}
   blightlv3: {fileID: 3856514655146380106}
   blight: {fileID: 1174326841334467105, guid: fb64af650caf3f341a7797920606cfc5, type: 3}
+--- !u!114 &1399385292088925700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7452531601979019962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11cf1a1c19b6dfd459180de9d2dc62d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
 --- !u!1001 &194980952721607693
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -189,6 +204,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 9f2a6c271b5c77247a063f927ca37e84, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 07c6e5b2dc4c49e4a90d80f54aaab843, type: 2}
     - target: {fileID: 919132149155446097, guid: 9f2a6c271b5c77247a063f927ca37e84, type: 3}
       propertyPath: m_Name
       value: Carrot_Crop_Model
@@ -283,6 +302,20 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f9b021e5ed191ff44a50c3a6f2958edc, type: 3}
   m_PrefabInstance: {fileID: 4126562197660481051}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2322025454184464066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3856514655146380106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11cf1a1c19b6dfd459180de9d2dc62d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
 --- !u!4 &4525773521076802032 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f9b021e5ed191ff44a50c3a6f2958edc, type: 3}
@@ -366,6 +399,20 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 11714cbd6b2fd7043ad7cd97f4ac33a8, type: 3}
   m_PrefabInstance: {fileID: 5602272500070206374}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2685900239212711426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4719258911676495607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11cf1a1c19b6dfd459180de9d2dc62d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
 --- !u!4 &5347457576237968461 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 11714cbd6b2fd7043ad7cd97f4ac33a8, type: 3}
@@ -454,3 +501,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 00210b0aaad659a4091844caec5f0dd4, type: 3}
   m_PrefabInstance: {fileID: 5917956442729400330}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1718359735327762741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6836930248116008283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11cf1a1c19b6dfd459180de9d2dc62d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0

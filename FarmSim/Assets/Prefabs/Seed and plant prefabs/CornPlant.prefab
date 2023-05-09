@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 9194543632771924624}
   - component: {fileID: 9194543632771924627}
   - component: {fileID: 3139380815484954564}
+  - component: {fileID: 3769220295408292107}
   m_Layer: 10
   m_Name: CornPlant
   m_TagString: CornSeed
@@ -122,6 +123,20 @@ MonoBehaviour:
   blightlv2: {fileID: 5311383558287370979}
   blightlv3: {fileID: 1966220089717572327}
   blight: {fileID: 1174326841334467105, guid: fb64af650caf3f341a7797920606cfc5, type: 3}
+--- !u!114 &3769220295408292107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9194543632771924626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11cf1a1c19b6dfd459180de9d2dc62d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
 --- !u!1001 &712817834043634209
 PrefabInstance:
   m_ObjectHideFlags: 0
