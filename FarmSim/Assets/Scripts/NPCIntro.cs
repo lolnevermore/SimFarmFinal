@@ -22,7 +22,7 @@ public class NPCIntro : MonoBehaviour
         if (other.CompareTag("Player") && !hasTriggered)
         {
             dialogBox1.SetActive(true);
-            dialogText1.text = "Hello, player! Do you know how to play? Do not worry if you don't, I will help you";
+            dialogText1.text = "What's poppin', playa? You wanna know how to get you hands dirty and deep in the mud?";
             hasTriggered = true;
             Time.timeScale = 0; // Pause player movement
         }
@@ -39,25 +39,25 @@ public class NPCIntro : MonoBehaviour
                     case 0:
                         dialogBox1.SetActive(false);
                         dialogBox2.SetActive(true);
-                        dialogText2.text = "To move around use WASD if you are using a keyboard and the analog stick if you are using a controller ";
+                        dialogText2.text = "To move around, fiddle those WASD keys if you are using a keyboard and the analog stick if you are using a controller ";
                         dialogIndex++;
                         break;
                     case 1:
                         dialogBox2.SetActive(false);
                         dialogBox3.SetActive(true);
-                        dialogText3.text = "To interact press Space on keyboard or X on controller";
+                        dialogText3.text = "To interact caress that Spacebar on keyboard or bottom face button on controller";
                         dialogIndex++;
                         break;
                     case 2:
                         dialogBox3.SetActive(false);
                         dialogBox4.SetActive(true);
-                        dialogText4.text = "The day runs fast and you must gather as many points as you can to be able to move to the next level";
+                        dialogText4.text = "Just like always, the day goes by faster than you think and you got a quota to fill before its over";
                         dialogIndex++;
                         break;
                     case 3:
                         dialogBox3.SetActive(false);
                         dialogBox4.SetActive(true);
-                        dialogText4.text = "But be careful, the forest is filled with dangerous creatures.";
+                        dialogText4.text = "Be careful, boss. Them foxes are maaaaad frisky, especially at night";
                         dialogIndex++;
                         break;
                     case 4:
