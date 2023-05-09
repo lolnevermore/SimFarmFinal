@@ -7,11 +7,13 @@ public class PauseMenu : MonoBehaviour
 {
     public static bool IsPaused = false;
     public GameObject PauseUI;
+    public GameObject SettingsUI;
 
     private void Start()
     {
         PauseUI = GameObject.Find("PauseUI");
         PauseUI.SetActive(false);
+        SettingsUI.SetActive(false);
     }
 
     void Update()
@@ -43,6 +45,16 @@ public class PauseMenu : MonoBehaviour
         IsPaused = true;
     }
 
+    public void Settings()
+    {
+        SettingsUI.SetActive(true);
+    }
+
+    public void ReturntoPause()
+    {
+        SettingsUI.SetActive(false);
+    }
+
     public void QuitToMain()
     {
         SceneManager.LoadScene("Main Menu");
@@ -51,5 +63,11 @@ public class PauseMenu : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+
+    public void SetVolumeMaster (float volume)
+    {
+        Debug.Log(volume);
     }
 }
