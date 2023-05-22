@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Upgrades : MonoBehaviour
 {
@@ -20,6 +21,24 @@ public class Upgrades : MonoBehaviour
     public GameObject Success;
     public GameObject bench;
 
+    public Sprite FoxDwn;
+    public Sprite FoxDwnHigh;
+    public Sprite FoxDwnPress;
+    public Sprite FoxDwnDisable;
+    public Button Fox;
+
+    public Sprite PlayerUp;
+    public Sprite PlayerUpHigh;
+    public Sprite PlayerUpPress;
+    public Sprite PlayerUpDisable;
+    public Button PlayerUpB;
+
+    public Sprite CropUp;
+    public Sprite CropUpHigh;
+    public Sprite CropUpPress;
+    public Sprite CropUpDisable;
+    public Button CropUpB;
+
     void Start()
     {
         //player = GameObject.Find("Player");
@@ -35,7 +54,6 @@ public class Upgrades : MonoBehaviour
         //enemy = GameObject.FindGameObjectWithTag("Enemy");
         //enemyMSpeed = enemy.GetComponent<Enemy>().moveSpeed;
         enemyRSpeed = enemy.GetComponent<Enemy>().runSpeed;
-
     }
 
     private void Update()
@@ -45,6 +63,34 @@ public class Upgrades : MonoBehaviour
         {
             PScore = 0;
         }
+
+        //if (PScore < 100)
+        //{
+        //    PlayerUpB.image.overrideSprite = PlayerUpDisable;
+        //    CropUpB.image.overrideSprite = CropUpDisable;
+        //    Fox.image.overrideSprite = FoxDwnDisable;
+        //}
+
+        //if (PScore >=100 && PScore < 150)
+        //{
+        //    PlayerUpB.image.overrideSprite = PlayerUpDisable;
+        //    CropUpB.image.overrideSprite = CropUpDisable;
+        //    Fox.image.overrideSprite = FoxDwn;
+        //}
+
+        //if (PScore >= 150 && PScore < 200)
+        //{
+        //    PlayerUpB.image.overrideSprite = PlayerUpDisable;
+        //    CropUpB.image.overrideSprite = CropUp;
+        //    Fox.image.overrideSprite = FoxDwn;
+        //}
+
+        //if (PScore >= 200)
+        //{
+        //    PlayerUpB.image.overrideSprite = PlayerUp;
+        //    CropUpB.image.overrideSprite = CropUp;
+        //    Fox.image.overrideSprite = FoxDwn;
+        //}
     }
     public void UpgradePlayerMovespeed()
     {
@@ -53,6 +99,10 @@ public class Upgrades : MonoBehaviour
             PScore = PScore - 200;
             player.GetComponent<Movement>().speed = playerSpeed * 2.5f;
         }
+        //else if (PScore < 200)
+        //{
+        //    PlayerUpB.image.overrideSprite = PlayerUpDisable;
+        //}
 
     }
 
@@ -65,6 +115,11 @@ public class Upgrades : MonoBehaviour
             CarPlant.GetComponent<PlantGrowth>().carrotTime = growCar * 0.5f;
             CornPlant.GetComponent<PlantGrowth>().cornTime = growCorn * 0.5f;
         }
+        //else if (PScore < 150)
+        //{
+        //    CropUpB.image.overrideSprite = CropUpDisable;
+
+        //}
     }
 
      public void DegradeFoxSpeed()
@@ -75,7 +130,13 @@ public class Upgrades : MonoBehaviour
             //enemy.GetComponent<Enemy>().moveSpeed = enemyMSpeed * 0.6f;
             enemy.GetComponent<Enemy>().runSpeed = enemyRSpeed * 0.6f;
         }
-        
+        //else if (PScore < 100)
+        //{
+        //    Fox.image.overrideSprite = FoxDwnDisable;
+
+        //}
+
+
     }
 
 

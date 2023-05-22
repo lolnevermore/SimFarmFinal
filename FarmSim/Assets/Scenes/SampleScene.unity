@@ -15395,6 +15395,21 @@ MonoBehaviour:
   CornPlant: {fileID: 1363901241134114432, guid: eb2746b0b722f774f853c81ac3f6e138, type: 3}
   Success: {fileID: 1862082914}
   bench: {fileID: 0}
+  FoxDwn: {fileID: 0}
+  FoxDwnHigh: {fileID: 0}
+  FoxDwnPress: {fileID: 0}
+  FoxDwnDisable: {fileID: 0}
+  Fox: {fileID: 0}
+  PlayerUp: {fileID: 0}
+  PlayerUpHigh: {fileID: 0}
+  PlayerUpPress: {fileID: 0}
+  PlayerUpDisable: {fileID: 0}
+  PlayerUpB: {fileID: 0}
+  CropUp: {fileID: 0}
+  CropUpHigh: {fileID: 0}
+  CropUpPress: {fileID: 0}
+  CropUpDisable: {fileID: 0}
+  CropUpB: {fileID: 0}
 --- !u!65 &1244916532
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28849,6 +28864,21 @@ MonoBehaviour:
   CornPlant: {fileID: 1363901241134114432, guid: eb2746b0b722f774f853c81ac3f6e138, type: 3}
   Success: {fileID: 1862082914}
   bench: {fileID: 1099625829}
+  FoxDwn: {fileID: 21300000, guid: 9151959cf59553d4f99a0a3c315fd0f9, type: 3}
+  FoxDwnHigh: {fileID: 21300000, guid: 560ae3e2118c0744ab7a526c2d048edc, type: 3}
+  FoxDwnPress: {fileID: 21300000, guid: dae0f780364b8ba49b428d3a50a527f5, type: 3}
+  FoxDwnDisable: {fileID: 21300000, guid: 7293605bc8161a847b8f9ef7dee08626, type: 3}
+  Fox: {fileID: 1995618615}
+  PlayerUp: {fileID: 21300000, guid: 2443618afc129ad4297d13e1ad0e77d6, type: 3}
+  PlayerUpHigh: {fileID: 21300000, guid: f5e37bee3c1db4f4080ffd3558bff9ad, type: 3}
+  PlayerUpPress: {fileID: 21300000, guid: 9656208762dea2c4d949ec17a1875670, type: 3}
+  PlayerUpDisable: {fileID: 21300000, guid: 416fed3aeb3acb443b543babae212a7d, type: 3}
+  PlayerUpB: {fileID: 7741829}
+  CropUp: {fileID: 21300000, guid: 2814aa772952e9f4b816298baa503a81, type: 3}
+  CropUpHigh: {fileID: 21300000, guid: 92270b1333b2d314b85e0c7744cb38cf, type: 3}
+  CropUpPress: {fileID: 21300000, guid: dac87fe7c06fd804a946977c1794e8a6, type: 3}
+  CropUpDisable: {fileID: 21300000, guid: fbc7bacc911100e4f8c6b265e21007bd, type: 3}
+  CropUpB: {fileID: 920232679}
 --- !u!1001 &1865858428
 PrefabInstance:
   m_ObjectHideFlags: 0
