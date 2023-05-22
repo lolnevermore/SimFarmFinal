@@ -8000,7 +8000,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 8183
   m_RenderingLayerMask: 1
   m_Lightmapping: 1
   m_LightShadowCasterMode: 0
@@ -27156,8 +27156,6 @@ MonoBehaviour:
   damage: 20
   fire: {fileID: 8300000, guid: 6c09e50f7d1ca9d4f86c0caed8f5b174, type: 3}
   source: {fileID: 70595280}
-  dropGun: {fileID: 0}
-  isPickedUp: 1
 --- !u!4 &1696809842 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2257381824393857745, guid: cb6726480012edc4b8095c5eb325234b, type: 3}
