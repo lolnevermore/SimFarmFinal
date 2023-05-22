@@ -7,10 +7,12 @@ public class Flamethrower : MonoBehaviour
     public float damage = 10f;
     public AudioClip fire;
     public AudioSource source;
+    public DropGun dropGun;
+    public bool isPickedUp = true;
 
     private void Update()
     {
-        if (Input.GetButton("Fire1"))
+        if (Input.GetButton("Fire1") && (isPickedUp = true))
         {
             particles.Play();
             source.PlayOneShot(fire);
@@ -18,6 +20,7 @@ public class Flamethrower : MonoBehaviour
         else
         {
             particles.Stop();
+            isPickedUp = false;
         }
     }
 

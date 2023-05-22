@@ -22318,7 +22318,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1693140377}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.0405, y: -0.0134, z: -0.0052}
+  m_LocalPosition: {x: -0.0405, y: -0.002, z: -0.0052}
   m_LocalScale: {x: 0.08528796, y: 0.08528796, z: 0.08528796}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -22649,7 +22649,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 7
+      scalar: 5
       minScalar: 2
       maxCurve:
         serializedVersion: 2
@@ -27156,6 +27156,8 @@ MonoBehaviour:
   damage: 20
   fire: {fileID: 8300000, guid: 6c09e50f7d1ca9d4f86c0caed8f5b174, type: 3}
   source: {fileID: 70595280}
+  dropGun: {fileID: 0}
+  isPickedUp: 1
 --- !u!4 &1696809842 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2257381824393857745, guid: cb6726480012edc4b8095c5eb325234b, type: 3}
