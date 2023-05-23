@@ -14,6 +14,7 @@ public class Enemy : MonoBehaviour
     private NavMeshAgent navMeshAgent;
     public AudioClip swipe;
     public AudioSource srce;
+   
 
     private void Start()
     {
