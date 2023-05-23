@@ -14,7 +14,7 @@ public class Enemy : MonoBehaviour
     private NavMeshAgent navMeshAgent;
     public AudioClip swipe;
     public AudioSource srce;
-   
+    public ParticleSystem particles;
 
     private void Start()
     {
@@ -49,6 +49,7 @@ public class Enemy : MonoBehaviour
         if (mainCharacterScript != null && !hasStolenPoints)
         {
             navMeshAgent.destination = mainCharacterScript.transform.position;
+            particles.Play();
         }
         else
         {
