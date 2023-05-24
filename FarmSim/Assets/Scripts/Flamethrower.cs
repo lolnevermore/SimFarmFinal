@@ -13,11 +13,13 @@ public class Flamethrower : MonoBehaviour
         if (Input.GetButton("Fire1"))
         {
             particles.Play();
-            source.PlayOneShot(fire);
+            //source.PlayOneShot(fire);
+            playFire();
         }
         else
         {
             particles.Stop();
+            stopFire();
         }
     }
 
@@ -28,5 +30,15 @@ public class Flamethrower : MonoBehaviour
         {
             enemyHealth.TakeDamage(damage);
         }
+    }
+
+    private void playFire()
+    {
+        source.PlayOneShot(fire);
+    }
+
+    private void stopFire()
+    {
+        source.Stop();
     }
 }
